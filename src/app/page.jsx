@@ -29,9 +29,7 @@ export default function Home() {
           )}
         </button>
         </nav>
-    <footer>
-          <Footer/>
-    </footer>   
+    <Footer/> 
   </>
   );
 }

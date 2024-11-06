@@ -4,27 +4,19 @@
 
 *{
   font-family: poppins;
-  background: var(--lilac);
-  color:black;
  }
-
- :root{
+:root{
   --lilac:#87a2ff;
- }
-
-body.light {
+}
+body.light{
   background: var(--lilac);
-  color:black;
 }
 body.dark{
-  background:black;
+  background: #000;
   color: var(--lilac);
 }
-.foot.light{
-  background: var(--lilac);
-  color: black;
-}
-.foot.dark{
-  background:black;
-  color:var(--lilac) ;
+.links{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
 }
