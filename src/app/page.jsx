@@ -63,7 +63,7 @@ export default function Home() {
       </h1>
 
       <p className="text-center text-base md:text-lg px-4 sm:px-10 md:px-24 mb-5">
-        I'm a front-end developer with a keen eye for design and a passion for creating intuitive, user-focused digital experiences.
+        I&apos;m a front-end developer with a keen eye for design and a passion for creating intuitive, user-focused digital experiences.
         Skilled in React, Tailwind CSS, and Next.js.
         With a foundation in UI/UX design, I bring visual storytelling to life through tools like Adobe Photoshop, Illustrator, and Canva.
         My journey extends to backend development, honing my skills in Python, C, and MongoDB.
