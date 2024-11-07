@@ -1,12 +1,25 @@
 'use client';
+import { useTypewriter, Cursor } from 'react-simple-typewriter';
 import Link from "next/link";
 import Footer from "../../components/Footer";
 import '../app/globals.css';
 import { useState, useEffect, useLayoutEffect } from "react";
-import Typical from 'react-typical';
 
 export default function Home() {
   const [isdarkmode, SetIsDarkMode] = useState(false);
+
+  const [text] = useTypewriter({
+    words: [
+      "Hello, I'm Dharun",
+      "A Designer",
+      "An Engineer",
+      "A Developer"
+    ],
+    loop: true,
+    typeSpeed: 100,
+    deleteSpeed: 50,
+    delaySpeed: 1000,
+  });
 
   useLayoutEffect(() => {
     const savedTheme = localStorage.getItem('theme');
@@ -43,19 +56,19 @@ export default function Home() {
           )}
         </button>
       </nav>
-      <Typical
-        className="flex justify-center my-5 mt-0 text-xl font-semibold"
-        steps={['Hello, I\'m Dharun👋', 1000, 'A Designer🧩', 1000, 'A Engineer💡', 1000, 'A Developer🎯', 1000]}
-        loop={Infinity}
-        typeSpeed={5}
-        deleteSpeed={50}
-        delaySpeed={5000}
-      />
-<p className="text-center text-base md:text-lg px-4 sm:px-10 md:px-24 mb-5">
-  I'm a front-end developer with a keen eye for design and a passion for creating intuitive, user-focused digital experiences.
-  Skilled in React, Tailwind CSS, and Next.js.
-  With a foundation in UI/UX design, I bring visual storytelling to life through tools like Adobe Photoshop, Illustrator, and Canva.
-  My journey extends to backend development, honing my skills in Python, C, and MongoDB.</p>
+
+      <h1 className="flex justify-center my-5 mt-0 text-2xl font-semibold">
+        {text}
+        <Cursor />
+      </h1>
+
+      <p className="text-center text-base md:text-lg px-4 sm:px-10 md:px-24 mb-5">
+        I'm a front-end developer with a keen eye for design and a passion for creating intuitive, user-focused digital experiences.
+        Skilled in React, Tailwind CSS, and Next.js.
+        With a foundation in UI/UX design, I bring visual storytelling to life through tools like Adobe Photoshop, Illustrator, and Canva.
+        My journey extends to backend development, honing my skills in Python, C, and MongoDB.
+      </p>
+      
       <Footer />
     </>
   );
