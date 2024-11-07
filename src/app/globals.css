@@ -8,10 +8,11 @@
 :root{
   --lilac:#87a2ff;
 }
-body.light{
+
+body.light, .About.light{
   background: var(--lilac);
 }
-body.dark{
+body.dark, .About.dark{
   background: #000;
   color: var(--lilac);
 }
