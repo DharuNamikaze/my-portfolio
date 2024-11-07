@@ -1,5 +1,6 @@
+// next.config.mjs
 const nextConfig = {
-    output: 'export',  // Enables static export
-    distDir: 'out'     // Specifies the output directory
-  };
+  // Add any other default configurations here if needed
+};
+
 export default nextConfig;
