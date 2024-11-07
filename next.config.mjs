@@ -1,8 +1,5 @@
-/** @type {import('next').NextConfig} */
 const nextConfig = {
-    output: 'export',  // This specifies static HTML export, which is useful if deploying as a static site
-    distDir: 'out',    // Change the output directory to 'out' (or '.next' if using a dynamic site)
+    output: 'export',  // Enables static export
+    distDir: 'out'     // Specifies the output directory
   };
-
-  export default nextConfig;
-  
+export default nextConfig;
