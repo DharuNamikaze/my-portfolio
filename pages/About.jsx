@@ -19,7 +19,7 @@ const About = () => {
       </section>
       <section className="p-10">
         <h1 className="text-4xl font-bold text-center mb-6">
-          Hi, I’m {`<Dharun/>`}
+          Hi, I&apos;m {`<Dharun/>`}
         </h1>
         <p className="text-lg mb-4">
           A passionate <span className="text-blue-600">Front-End Developer</span>{" "}
@@ -60,7 +60,7 @@ const About = () => {
             Why I Love What I Do
           </h2>
           <p className="text-lg text-gray-700 mb-4">
-          I'm dedicated to crafting digital products that are not only functional but also visually engaging. 
+          I&apos;m dedicated to crafting digital products that are not only functional but also visually engaging. 
           For me, each project is an opportunity to connect with users and make their online experience 
           more enjoyable and meaningful.
           </p>
