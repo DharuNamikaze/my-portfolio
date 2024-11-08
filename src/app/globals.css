@@ -2,9 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-  font-family: poppins;
- }
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
 :root{
   --lilac:#87a2ff;
 }
@@ -18,6 +19,10 @@ body.dark, .About.dark{
 }
 .links{
   display: flex;
+  
   gap: 20px;
   justify-content: center;
+}
+.anchor{
+  color: rgb(2, 84, 199);
 }
