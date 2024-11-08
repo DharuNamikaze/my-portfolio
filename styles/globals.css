@@ -19,10 +19,6 @@ body.dark, .About.dark{
 }
 .links{
   display: flex;
-  
   gap: 20px;
   justify-content: center;
 }
-.anchor{
-  color: rgb(2, 84, 199);
-} 

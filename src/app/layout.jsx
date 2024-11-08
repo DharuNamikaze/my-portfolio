@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
             <body>
-        <nav className="mt-12 mb-10 xs:text-lg flex gap-10 items-center justify-center">
+        <nav className="mt-12 mb-8 xs:text-lg flex gap-10 items-center justify-center">
           <Link href="/">Home</Link>
           <Link href="/About">About</Link>
           <Link href="/Works">Works</Link>

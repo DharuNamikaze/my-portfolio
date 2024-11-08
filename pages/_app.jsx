@@ -25,7 +25,7 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <>
-      <nav className="mt-12 mb-10 xs:text-lg flex gap-10 items-center justify-center">
+      <nav className="mt-12 xs:text-lg flex gap-10 items-center justify-center">
         <Link href="/">Home</Link>
         <Link href="/About">About</Link>
         <Link href="/Works">Works</Link>
@@ -42,7 +42,6 @@ function MyApp({ Component, pageProps }) {
         </button>
       </nav>
       
-      {/* Render the current page component */}
       <Component {...pageProps} />
     </>
   );
