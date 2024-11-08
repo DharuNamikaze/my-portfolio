@@ -1,6 +1,6 @@
 // app/layout.jsx
 'use client';
-import './globals.css';
+import '../../styles/globals.css';
 import Link from 'next/link';
 import { useState, useLayoutEffect } from 'react';
 

@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const Footer = () => {
   return (
-    <footer className='foot p-6 text-center border-t text-sm '>
+    <footer className='foot p-6 text-center text-sm '>
       <div className='links flex justify-center gap-5'>
         <Link href="https://github.com/DharuNamikaze" target="_blank" aria-label="GitHub">
           <svg width="24" height="24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">

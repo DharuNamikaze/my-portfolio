@@ -1,12 +1,12 @@
 // pages/_app.js
-import '../src/app/globals.css';  // Import global CSS
-import { useState, useLayoutEffect } from 'react';
+import '../styles/globals.css';  // Import global CSS
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 
 function MyApp({ Component, pageProps }) {
   const [isdarkmode, setIsDarkMode] = useState(false);
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme === 'dark') {
       setIsDarkMode(true);

@@ -1,6 +1,6 @@
 // app/home/page.jsx
 'use client'
-import './globals.css';
+import '../../styles/globals.css';
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
 import Footer from '../../components/Footer';
 
@@ -20,7 +20,7 @@ export default function Home() {
 
   return (
     <>
-      <h1 className="flex justify-center my-5 mt-0 text-2xl font-semibold">
+      <h1 className="flex justify-center my-5 mt-0 text-2xl font-extrabold">
         {text}
         <Cursor />
       </h1>
@@ -31,7 +31,7 @@ export default function Home() {
         My journey extends to backend development, honing my skills in Python, C, and MongoDB.
       </p>
       
-      <Footer />
+      <Footer/>
     </>
   );
 }

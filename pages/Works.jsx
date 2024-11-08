@@ -1,4 +1,4 @@
-import "../src/app/globals.css";
+import '../styles/globals.css';  
 
 const Works = () => {
   return (
