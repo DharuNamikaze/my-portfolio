@@ -27,7 +27,6 @@ const About = () => {
               <li>Solving complex problems with creative, simple solutions</li>
             </ul>
           </div>
-
           <div>
             <h2 className="text-xl font-semibold text-blue-600 mb-2">
               Skills & Technologies
