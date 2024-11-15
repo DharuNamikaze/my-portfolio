@@ -1,4 +1,5 @@
 // components/RadarChart.js
+import { useEffect, useState } from 'react';
 import { Radar } from 'react-chartjs-2';
 import { Chart as ChartJS, RadialLinearScale, PointElement, LineElement, Filler, Tooltip, Legend } from 'chart.js/auto';
 
@@ -11,34 +12,58 @@ const RadarChart = () => {
       {
         label: 'Skill Proficiency',
         data: [80, 90, 70, 55, 75],
-        backgroundColor: 'rgba(255, 99, 132, 0.2)',
-        borderColor: 'rgb(255, 99, 132)',
-        borderWidth: 1.5,
+        backgroundColor: 'rgba(49, 130, 256, 0.7)', // Light blue background with transparency
+        borderColor: 'rgba(49, 130, 256, 1)',        // Solid blue for the border
+        borderWidth: 2.5,
       },
     ],
   };
 
   const options = {
+    plugins: {
+        legend: {
+          display: true,
+          labels: {
+            font: {
+                family: 'poppins',
+                size: 16, // Font size for "Skill Proficiency" label
+              weight: 'bold', // Bold text
+            },
+            color: 'rgba(0, 0, 0, 1)', // Label color
+            padding: 20, // Padding around the label
+          },
+        },
+      },
     scales: {
       r: {
         beginAtZero: true,
+        angleLines: { color: 'rgba(49, 130, 256, 1)' },
         ticks: {
-          display: false, // Hides the tick labels
+          display: false,
+        },
+        grid: {
+          color: '#3182F8', // Light blue grid color
         },
         pointLabels: {
           font: {
-            family: "'Arial', sans-serif", // You can change the font family
-            size: 16, // Increase font size
-            weight: 'bold', // Make labels bold
+            family:'poppins',
+            size: 16,
+            weight: 'bold',
           },
-          color: '#4A90E2', // Change label text color
-          padding: 20, // Increase padding between labels and center
+          color: 'rgba(49, 130, 256, 1)', // Label text color in solid blue
+          padding: 20,
         },
       },
     },
   };
 
-  return <Radar data={data} options={options} />;
+  return (
+    <div className="m-5 flex justify-center items-center">
+      <div className="w-96 h-96">
+        <Radar data={data} options={options} />
+      </div>
+    </div>
+  );
 };
 
 export default RadarChart;

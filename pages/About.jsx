@@ -9,12 +9,12 @@ const About = () => {
         </h1>
         <p className="text-lg mb-4 text-center">
           A passionate <span className="text-blue-600">Front-End Developer</span>{" "}
-          and <span className="text-blue-600">UI/UX Designer</span> dedicated to
+          and <span className=" text-blue-600">UI/UX Designer</span> dedicated to
           creating clean, user-friendly web experiences.
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-          <div>
+          <div className="">
             <h2 className="text-xl font-semibold text-center text-blue-600 mb-2">What I Do</h2>
             <ul className="list-disc pl-5 space-y-2">
               <li>
