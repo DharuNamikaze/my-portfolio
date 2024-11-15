@@ -30,7 +30,6 @@ export default function Home() {
         With a foundation in UI/UX design, I bring visual storytelling to life through tools like Adobe Photoshop, Illustrator, and Canva.
         My journey extends to backend development, honing my skills in Python, C, and MongoDB.
       </p>
-      
       <Footer/>
     </>
   );

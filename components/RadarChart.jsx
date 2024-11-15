@@ -10,9 +10,8 @@ const RadarChart = () => {
     labels: ['Front-end', 'Designing', 'Back-end', 'Database', 'Coding'],
     datasets: [
       {
-        label: 'Skill Proficiency',
-        data: [80, 90, 70, 55, 75],
-        backgroundColor: 'rgba(49, 130, 256, 0.7)', // Light blue background with transparency
+        data: [80, 90, 70, 55, 65],
+        backgroundColor: 'rgba(49, 130, 256, 0.8)', // Light blue background with transparency
         borderColor: 'rgba(49, 130, 256, 1)',        // Solid blue for the border
         borderWidth: 2.5,
       },
@@ -21,20 +20,11 @@ const RadarChart = () => {
 
   const options = {
     plugins: {
-        legend: {
-          display: true,
-          labels: {
-            font: {
-                family: 'poppins',
-                size: 16, // Font size for "Skill Proficiency" label
-              weight: 'bold', // Bold text
-            },
-            color: 'rgba(0, 0, 0, 1)', // Label color
-            padding: 20, // Padding around the label
-          },
-        },
+      legend: {
+        display: false, // Disables the legend entirely
       },
-    scales: {
+    },
+   scales: {
       r: {
         beginAtZero: true,
         angleLines: { color: 'rgba(49, 130, 256, 1)' },
@@ -58,7 +48,7 @@ const RadarChart = () => {
   };
 
   return (
-    <div className="m-5 flex justify-center items-center">
+    <div className="flex justify-center items-center">
       <div className="w-96 h-96">
         <Radar data={data} options={options} />
       </div>
