@@ -1,5 +1,5 @@
+import RadarChart from "../components/RadarChart";
 import "../styles/globals.css";
-
 const About = () => {
   return (
     <>
@@ -15,7 +15,7 @@ const About = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
           <div>
-            <h2 className="text-xl font-semibold text-blue-600 mb-2">What I Do</h2>
+            <h2 className="text-xl font-semibold text-center text-blue-600 mb-2">What I Do</h2>
             <ul className="list-disc pl-5 space-y-2">
               <li>
                 Building responsive websites with HTML, CSS, JavaScript,
@@ -28,7 +28,7 @@ const About = () => {
             </ul>
           </div>
           <div>
-            <h2 className="text-xl font-semibold text-blue-600 mb-2">
+            <h2 className="text-xl font-semibold text-center text-blue-600 mb-2">
               Skills & Technologies
             </h2>
             <ul className="list-disc pl-5 space-y-2">
@@ -39,7 +39,9 @@ const About = () => {
             </ul>
           </div>
         </div>
-
+        <div>
+          <RadarChart/>
+        </div>
         <div className="mt-6">
           <h2 className="text-xl font-semibold text-blue-600 mb-2 text-center">
             Why I Love What I Do
@@ -53,14 +55,13 @@ const About = () => {
 
         <div className="text-center mt-8">
           Take My {" "}
-          <a
+          Resume 
+            <a
             href="../assets/Dharun-Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="text-lg font-medium text-blue-600 hover:underline"
-          >
-             Resume
-          </a>
+          > here</a>
         </div>
       </section>
     </>
