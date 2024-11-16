@@ -20,11 +20,11 @@ export default function Home() {
 
   return (
     <>
-      <h1 className="flex justify-center my-5 text-4xl font-extrabold">
+      <h1 className="flex justify-center mb-5 xs:text-4xl md:text-6xl lg:text-8xl xl:text-9xl font-extrabold">
         {text}
         <Cursor />
       </h1>
-      <p className=" px-8 text-center text-base md:text-lg xl:px-32 md:px-14 mb-5">
+      <p className=" px-8 items-center text-center text-base md:text-lg xl:px-32 md:px-14 mb-5">
         I&apos;m a front-end developer with a keen eye for design and a passion for creating intuitive, user-focused digital experiences.
         Skilled in React, Tailwind CSS, and Next.js.
         With a foundation in UI/UX design, I bring visual storytelling to life through tools like Adobe Photoshop, Illustrator, and Canva.

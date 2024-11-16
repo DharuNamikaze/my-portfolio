@@ -1,7 +1,13 @@
-// components/RadarChart.js
-import { useEffect, useState } from 'react';
 import { Radar } from 'react-chartjs-2';
-import { Chart as ChartJS, RadialLinearScale, PointElement, LineElement, Filler, Tooltip, Legend } from 'chart.js/auto';
+import {
+  Chart as ChartJS,
+  RadialLinearScale,
+  PointElement,
+  LineElement,
+  Filler,
+  Tooltip,
+  Legend,
+} from 'chart.js/auto';
 
 ChartJS.register(RadialLinearScale, PointElement, LineElement, Filler, Tooltip, Legend);
 
@@ -11,45 +17,55 @@ const RadarChart = () => {
     datasets: [
       {
         data: [80, 90, 70, 55, 65],
-        backgroundColor: 'rgba(49, 130, 256, 0.8)', // Light blue background with transparency
-        borderColor: 'rgba(49, 130, 256, 1)',        // Solid blue for the border
+        backgroundColor: 'rgba(49, 130, 256, 0.8)',
+        borderColor: 'rgba(49, 130, 256, 1)',
         borderWidth: 2.5,
       },
     ],
   };
 
   const options = {
-    plugins: {
-      legend: {
-        display: false, // Disables the legend entirely
+    responsive: true,
+    maintainAspectRatio: false, // Allows the chart to stretch within the container
+    layout: {
+      padding: {
+        top: -15, // Adjusts the chart’s top padding
+        bottom: -15, // Adjusts the chart’s bottom padding
       },
     },
-   scales: {
+    scales: {
       r: {
         beginAtZero: true,
-        angleLines: { color: 'rgba(49, 130, 256, 1)' },
+        angleLines: {
+          color: 'rgba(49, 130, 256, 1)',
+        },
         ticks: {
-          display: false,
+          display: false, // Hides ticks
         },
         grid: {
-          color: '#3182F8', // Light blue grid color
+          color: '#3182F8',
         },
         pointLabels: {
           font: {
-            family:'poppins',
+            family: 'Poppins',
             size: 16,
             weight: 'bold',
           },
-          color: 'rgba(49, 130, 256, 1)', // Label text color in solid blue
-          padding: 20,
+          color: 'rgba(49, 130, 256, 1)',
+          padding: 10, // Padding around point labels
         },
+      },
+    },
+    plugins: {
+      legend: {
+        display: false, // Removes unnecessary legend space
       },
     },
   };
 
   return (
-    <div className="flex justify-center items-center">
-      <div className="w-96 h-96">
+    <div className="flex justify-center">
+      <div className="w-full max-w-md h-96">
         <Radar data={data} options={options} />
       </div>
     </div>
