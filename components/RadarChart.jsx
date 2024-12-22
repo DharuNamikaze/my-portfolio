@@ -27,12 +27,6 @@ const RadarChart = () => {
   const options = {
     responsive: true,
     maintainAspectRatio: false, // Allows the chart to stretch within the container
-    layout: {
-      padding: {
-        top: -15, // Adjusts the chart’s top padding
-        bottom: -15, // Adjusts the chart’s bottom padding
-      },
-    },
     scales: {
       r: {
         beginAtZero: true,

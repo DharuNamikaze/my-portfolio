@@ -3,8 +3,8 @@ import "../styles/globals.css";
 const About = () => {
   return (
     <>
-      <section className="xs:p-6 justify-center">
-        <h1 className="text-3xl font-bold text-center mb-4">
+      <section className="xs:px-7 mt-10 justify-center">
+        <h1 className="text-3xl xs:px-4 font-bold text-center mb-4">
           Hi, I&apos;m {`<Dharun/>`}
         </h1>
         <p className="text-center md:px-11">
@@ -16,26 +16,26 @@ const About = () => {
           Solving complex problems with creative, simple solutions
         </p>
         <div className="md:flex md:space-x-8 lg:space-x-12 items-center">
-  {/* RadarChart */}
-  <div className="flex-1">
-    <RadarChart />
-  </div>
-  
-  {/* Skills & Technologies */}
-  <div className="flex-1 mb-6 xs:text-left sm:text-left">
-    <h2 className="text-xl font-semibold text-blue-600 mb-2">
-      Skills & Technologies
-    </h2>
-    <ul className="space-y-3">
-      <li>Languages: HTML, CSS, JavaScript, Python, C</li>
-      <li>Frameworks: React.js, Next.js, Tailwind CSS</li>
-      <li>Design: Figma, Adobe Photoshop, Illustrator</li>
-      <li>Version Control: Git, GitHub</li>
-    </ul>
-  </div>
-</div>
+          {/* RadarChart */}
+          <div className="flex-1">
+            <RadarChart />
+          </div>
 
-        <div className="xs:text-left sm:text-center sm:">
+          {/* Skills & Technologies */}
+          <div className="flex-1 xs:px-4 mb-6 xs:text-left sm:text-left">
+            <h2 className="text-xl font-semibold text-blue-600 mb-2">
+              Skills & Technologies
+            </h2>
+            <ul className="space-y-2">
+              <li>Languages: HTML, CSS, JavaScript, Python, C</li>
+              <li>Frameworks: React.js, Next.js, Tailwind CSS</li>
+              <li>Design: Figma, Adobe Photoshop, Illustrator</li>
+              <li>Version Control: Git, GitHub</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="xs:text-left xs:px-4 sm:text-center sm:">
           <h2 className="text-xl font-semibold text-blue-600 mb-4">
             Why I Love What I Do
           </h2>
@@ -46,7 +46,7 @@ const About = () => {
             more enjoyable and meaningful.
           </p>
         </div>
-        <div className="text-center mt-8">
+        <div className="text-center mt-8 mb-10">
           Take My Resume
           <a
             href="../assets/Dharun-Resume.pdf"
